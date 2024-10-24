@@ -1,0 +1,82 @@
+/* General Navbar styling */
+.navbar {
+    background-color: #1e0303; /* Navbar background color */
+    position: fixed;
+    width: 100%;
+    padding: 10px 20px;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Align logo and hamburger icon */
+    align-items: center;
+  }
+  
+  .logos{
+    width:90%;
+    display:flex;
+    padding: 10px 20px;
+    justify-content: space-between; /* Align logo and hamburger icon */
+    align-items: center;
+    z-index: 1000;
+    top: 0;
+  }
+
+  .navbar-logo img {
+    width: 50px; /* Adjust logo size as needed */
+    height: auto;
+    filter: none;
+  }
+  
+  /* Hamburger menu - always visible */
+  .hamburger {
+    cursor: pointer;
+  }
+  
+  .hamburger-logo {
+    width: 40px; /* Adjust size of the hamburger icon */
+    height: auto;
+    filter: invert(100%);
+  }
+  
+  /* Menu styling */
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    padding: 15px;
+    display: none; /* Hidden by default */
+  }
+  
+  .menu.open {
+    display: block; /* Show when the menu is toggled open */
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin: 10px 0;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .menu ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Optional: Adjust menu items for larger screens */
+  @media (min-width: 1024px) {
+    .menu ul li a {
+      font-size: 20px; /* Slightly larger font on large screens */
+    }
+  }
+  
